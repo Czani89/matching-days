@@ -2,23 +2,31 @@ body{
     margin: auto;
 }
 .container{
-   padding: 2rem;
-   width: 90%;
-   background: rosybrown;
+    margin-left: auto;
+    margin-right: auto;
+   padding: 4%;
+   width: 100%;
+   background: rgb(175, 146, 157);
+}
+h1{
+    background-color: rgb(75, 83, 88);
+    color: wheat;
+    text-align: center;
 }
  table{
-     background-color: rgb(177, 116, 2);
-     width: 60%;
+     background-color: rgb(210, 214, 239);
+     width: 90%;
+     margin-bottom: 2rem;
+  
  }
-table,td{
-    border: 2px solid black;
-    border-collapse: collapse;
-    margin: 1rem 0rem;
+table,tr, td{
+    border: 2px solid rgb(56, 97, 140);
+    border-collapse: collapse; 
 }
 td{
     font-style: oblique;
-  width: 4.5rem;
-  height: 4.5rem;
+height:4.5rem;
+width: 4.5rem;
   text-align: center;
 }
 
@@ -30,7 +38,7 @@ input[type=date]{
     margin-bottom: 2rem;
 }
 .datesContainer{
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 
@@ -43,4 +51,22 @@ input[type=date]{
 }
 .dayMatch{
     background-color: green;
+}
+@media screen and (max-width: 425px){
+ tr{
+      display: flex;
+      flex-direction: column;
+ margin:  0rem;
+   border: 2px solid rgb(56, 97, 140);
+    }
+
+    table{
+        width: 4.5rem;
+    }
+ 
+  .weekdayContainer{
+     display: flex;
+     justify-content: space-around;
+  }
+
 }

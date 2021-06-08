@@ -1,6 +1,7 @@
 const weekdays = document.querySelector(".weekdays");
 const date1 = document.querySelector("#date1");
 const date2 = document.querySelector("#date2");
+
 const daysTemp = document.querySelector(".textTemplate").innerHTML;
 const tempCompile = Handlebars.compile(daysTemp);
 
@@ -8,13 +9,12 @@ const myDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 
 weekdays.innerHTML = tempCompile({ days: myDays });
 
-//get dates from calendar by using target event
-//use make date to match it with day on bar
+let matchInst = dayMatch()
+
 let days = weekdays.children
-//use target to get refence to the day and set the class
+
 date1.addEventListener("change", function (e) {
-    let date1 = new Date(e.target.value);
-    let day1 = date1.getDay();
+    let day1 = matchInst.getDayIndex(e.target.value)
 
     for (let i = 0; i < days.length; i++) {
         let dayItem = days[i];
@@ -32,8 +32,7 @@ date1.addEventListener("change", function (e) {
 })
 
 date2.addEventListener("change", function (e) {
-    let date2 = new Date(e.target.value);
-    let day2 = date2.getDay()
+    let day2 = matchInst.getDayIndex(e.target.value)
 
     for (let i = 0; i < days.length; i++) {
         let dayItem2 = days[i];
@@ -49,3 +48,4 @@ date2.addEventListener("change", function (e) {
         }
     }
 })
+
