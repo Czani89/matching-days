@@ -1,0 +1,46 @@
+body{
+    margin: auto;
+}
+.container{
+   padding: 2rem;
+   width: 90%;
+   background: rosybrown;
+}
+ table{
+     background-color: rgb(177, 116, 2);
+     width: 60%;
+ }
+table,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 1rem 0rem;
+}
+td{
+    font-style: oblique;
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+}
+
+input[type=date]{
+    display: block;
+    margin: .5rem;
+}
+#date1{
+    margin-bottom: 2rem;
+}
+.datesContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.blockColor1{
+    background-color: brown;
+}
+
+.blockColor2{
+    background-color: blue;
+}
+.dayMatch{
+    background-color: green;
+}

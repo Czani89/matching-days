@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<header>
+    <script type="text/x-template" class="textTemplate">
+    {{#each days}}
+    <td class="days">{{this}}</td>
+    {{/each}}
+    </script>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Matching Days</h1>
+        <table>
+            <tr class="weekdays">
+
+            </tr>
+        </table>
+
+        <div class="">
+            <label for="date1">First date</label>
+            <input type="date" name="date1" id="date1">
+            <label for="date2">Second date</label>
+            <input type="date" name="date2" id="date2">
+        </div>
+    </div>
+    <script src="./sandbox.js"></script>
+</body>
+
+</html>
