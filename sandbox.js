@@ -31,6 +31,7 @@ date1.addEventListener("change", function (e) {
     }
 })
 
+
 date2.addEventListener("change", function (e) {
     let day2 = matchInst.getDayIndex(e.target.value)
 
