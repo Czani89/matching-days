@@ -80,6 +80,6 @@ width: 4.5rem;
 }
 @media screen and (max-width:320px){
 table{
-    margin-right: 1.5rem;
+    margin-right: 0.5rem;
 }
 }
